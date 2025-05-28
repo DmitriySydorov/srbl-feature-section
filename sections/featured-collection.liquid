@@ -178,7 +178,7 @@
           class="gradient-border-button"
           aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title | escape }}"
         >
-          <span class="button-content">Обрати з улюбленого 
+          <span class="button-content"> {{section.settings.link_text | default:'Обрати з улюбленого'}}
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
             <path d="M2 8.00003L14 8.00002M14 8.00002C14 8.00002 11.6028 8.64754 10.3672 9.4286C9.13156 10.2096 7.67189 12 7.67189 12M14 8.00002C14 8.00002 11.6028 7.35246 10.3672 6.57145C9.13155 5.7904 7.67189 4 7.67189 4" stroke="#3E3229" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -246,6 +246,11 @@
       "default": true,
       "label": "t:sections.featured-collection.settings.show_view_all.label",
       "info": "t:sections.featured-collection.settings.show_view_all.info"
+    },
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "Text for link"
     },
     {
       "type": "select",
