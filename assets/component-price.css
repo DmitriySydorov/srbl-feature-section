@@ -53,6 +53,9 @@
 .price__regular {
   display: block;
 }
+.price__regular {
+  font-weight: 600;
+}
 
 .price__sale,
 .price__availability,

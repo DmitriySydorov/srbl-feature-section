@@ -9,76 +9,76 @@
  */
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "featured_collection": {
+      "type": "featured-collection",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "custom-subtitle_BwR9m3": {
+          "type": "custom-subtitle",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
-          }
+            "subtitle": "НАШІ БЕСТСЕЛЕРИ",
+            "text_alignment": "center",
+            "font_size": 14,
+            "font_size_mobile": 13,
+            "font_weight": "400",
+            "text_transform": "uppercase",
+            "text_color": "#c6b081",
+            "max_width": 600,
+            "margin_top": 0,
+            "margin_bottom": 16
+          },
+          "blocks": {}
         },
-        "button": {
-          "type": "buttons",
+        "custom-title_Yb4QXn": {
+          "type": "custom-title",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
+            "heading_text": "Найбільш обиране серед покупців",
+            "heading_tag": "h2",
+            "max_width": 560,
+            "font_size": 48,
+            "font_size_mobile": 32,
+            "font_weight": "700",
+            "text_alignment": "center",
+            "text_color": "#121212",
+            "text_shadow": false,
+            "use_gradient": true,
+            "gradient_color_1": "#282523",
+            "gradient_color_2": "#3e3229",
+            "gradient_color_3": "#282523",
+            "gradient_direction": "to right",
+            "margin_top": 0,
+            "margin_bottom": 48
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "custom-subtitle_BwR9m3",
+        "custom-title_Yb4QXn"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "image_behavior": "none",
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
+        "collection": "chocolate",
+        "products_to_show": 5,
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
+        "enable_desktop_slider": true,
         "full_width": false,
         "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "swipe_on_mobile": false,
+        "view_all_style": "outline",
+        "color_scheme": "scheme-1",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "padding_top": 44,
-        "padding_bottom": 36
+        "show_type": true,
+        "quick_add": "custom",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 72,
+        "padding_bottom": 112
       }
     }
   },
   "order": [
-    "image_banner",
     "featured_collection"
   ]
 }

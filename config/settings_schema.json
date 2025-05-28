@@ -153,8 +153,8 @@
         "type": "range",
         "id": "page_width",
         "min": 1000,
-        "max": 1600,
-        "step": 100,
+        "max": 1700,
+        "step": 20,
         "default": 1200,
         "unit": "px",
         "label": "t:settings_schema.layout.settings.page_width.label"
@@ -180,7 +180,7 @@
       {
         "type": "range",
         "id": "spacing_grid_horizontal",
-        "min": 4,
+        "min": 0,
         "max": 40,
         "step": 4,
         "default": 8,
@@ -190,7 +190,7 @@
       {
         "type": "range",
         "id": "spacing_grid_vertical",
-        "min": 4,
+        "min": 0,
         "max": 40,
         "step": 4,
         "default": 8,

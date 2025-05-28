@@ -21,6 +21,15 @@
   --image-padding: var(--product-card-image-padding);
   --text-alignment: var(--product-card-text-alignment);
 }
+slider-component .grid .grid__item {
+  transition: 0.3s all;
+}
+slider-component .grid .grid__item:hover {
+  border: 1px solid #C6B081;
+  border-width: 1px;
+  background: #f9f6f3;
+  box-shadow: 0px 12px 32px rgba(48, 42, 37, 0.08);
+}
 
 .collection-card-wrapper .card,
 .contains-card--collection {
@@ -126,8 +135,8 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 @media screen and (min-width: 990px) {
   .header:not(.drawer-menu).page-width {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 
   .page-width--narrow {
@@ -145,7 +154,9 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   position: relative;
   z-index: 0;
 }
-
+.section {
+  border-bottom: 1px solid #C6B081;
+}
 .section + .section {
   margin-top: var(--spacing-sections-mobile);
 }
@@ -395,6 +406,8 @@ blockquote {
 .caption-with-letter-spacing--large {
   font-size: 1.4rem;
   letter-spacing: 0.18rem;
+  margin-bottom: 8px;
+  font-family: "Manrope", sans-serif;
 }
 
 .caption-large,
@@ -459,6 +472,10 @@ table:not([class]) th {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }
 
 .light {
@@ -1074,9 +1091,41 @@ summary::-webkit-details-marker {
   .slider--mobile.grid--peek.grid--1-col-tablet-down .grid__item {
     width: calc(100% - var(--grid-mobile-horizontal-spacing) - 3rem);
   }
+  .collection .slider-mobile-gutter .grid {
+    column-gap: 16px;
+  }
+  .collection .slider-mobile-gutter .grid__item {
+    padding: 8px 8px 12px;
+  }
+  .collection .slider--desktop.grid--4-col-desktop .grid__item {
+    border-width: 1px;
+  }
+  .collection .card--standard>.card__content .card__information {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .collection .price-content {
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 750px) and (max-width: 989px) {
+  .collection .price-content {
+    flex-direction: column;
+  }
+  .collection .card--standard>.card__content .card__information {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .collection .slider--desktop.grid--4-col-desktop .grid__item {
+    border-width: 1px;
+  }
+  .collection .slider-mobile-gutter .grid__item {
+    padding: 8px 8px 12px;
+  }
+  .collection .slider-mobile-gutter .grid {
+    column-gap: 16px;
+  }
   .slider--tablet.grid--peek .grid__item {
     width: calc(25% - var(--grid-desktop-horizontal-spacing) - 3rem);
   }
