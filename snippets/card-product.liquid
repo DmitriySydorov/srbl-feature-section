@@ -62,6 +62,7 @@
             {% assign badges = card_product.metafields.custom.badges.value %}
 
             <ul class="badge-position badge-top-left">
+              <script>console.log({{ badges | json }})</script>
               {% for badge in badges %}
                 {% if badge.position_top == true and badge.position_right == false %}
                   <li style="color: {{ badge.text_color }}; background: {{ badge.bacground_color }}">
@@ -90,7 +91,7 @@
             </ul>
             <ul class="badge-position badge-bottom-right">
               {% for badge in badges %}
-                {% if badge.position_top == true and badge.position_right == false %}
+                {% if badge.position_top == false and badge.position_right == false %}
                   <li style="color: {{ badge.text_color }}; background: {{ badge.bacground_color }}">
                     {{ badge.text }}
                   </li>
