@@ -91,7 +91,7 @@
             </ul>
             <ul class="badge-position badge-bottom-right">
               {% for badge in badges %}
-                {% if badge.position_top == false and badge.position_right == false %}
+                {% if badge.position_top == false and badge.position_right == true %}
                   <li style="color: {{ badge.text_color }}; background: {{ badge.bacground_color }}">
                     {{ badge.text }}
                   </li>
